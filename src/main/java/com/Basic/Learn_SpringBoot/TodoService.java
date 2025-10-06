@@ -1,5 +1,6 @@
 package com.Basic.Learn_SpringBoot;
 
+import com.Basic.Learn_SpringBoot.Entity.Todo;
 import lombok.ToString;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,11 @@ public class TodoService {
             todo.add(new Todo(2L,"Sharan","Learn Spring MVC",false,null));
         }
 
+
+        public void save(Todo e)
+        {
+            todo.add(e);
+        }
 
         public List<Todo> findByUsername(String username)
         {
