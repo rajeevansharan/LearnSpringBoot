@@ -1,4 +1,4 @@
-package com.Basic.Learn_SpringBoot;
+package com.Basic.Learn_SpringBoot.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,5 +22,7 @@ public class HelloController {
         model.addAttribute("name",name);
         return "Leaf";
     }
+
+
 }
 

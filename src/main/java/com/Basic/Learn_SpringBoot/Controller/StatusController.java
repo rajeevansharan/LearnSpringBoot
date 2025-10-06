@@ -1,4 +1,4 @@
-package com.Basic.Learn_SpringBoot;
+package com.Basic.Learn_SpringBoot.Controller;
 
 
 import org.springframework.data.domain.PageRequest;

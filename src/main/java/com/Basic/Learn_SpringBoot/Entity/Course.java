@@ -1,4 +1,4 @@
-package com.Basic.Learn_SpringBoot;
+package com.Basic.Learn_SpringBoot.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

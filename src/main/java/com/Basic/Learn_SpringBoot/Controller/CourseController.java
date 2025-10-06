@@ -1,9 +1,7 @@
-package com.Basic.Learn_SpringBoot;
+package com.Basic.Learn_SpringBoot.Controller;
 
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.Basic.Learn_SpringBoot.Entity.Course;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
