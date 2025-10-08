@@ -17,23 +17,19 @@ public class LoginController {
     private AuthenticationService authenticationService;
 
     @GetMapping("/login")
-    public String login( )
-    {
+    public String login() {
         return "Login";
     }
 
     @PostMapping("/login")
-    public String login(@RequestParam String username,@RequestParam String password,@RequestParam String nickname, Model model)
-    {
-        if(authenticationService.authenticate(username,password))
-        {
+    public String login(@RequestParam String username, @RequestParam String password, @RequestParam String nickname, Model model) {
+        if (authenticationService.authenticate(username, password)) {
 
-            model.addAttribute("username",username);
-            model.addAttribute("password",password);
-            model.addAttribute("name",nickname);
+            model.addAttribute("username", username);
+            model.addAttribute("password", password);
+            model.addAttribute("name", nickname);
             return "Welcome";
-        }
-       else return "Login";
+        } else return "Login";
     }
 
 
