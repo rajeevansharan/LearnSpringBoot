@@ -2,6 +2,8 @@ package com.Basic.Learn_SpringBoot.Controller;
 
 import com.Basic.Learn_SpringBoot.Entity.Todo;
 import com.Basic.Learn_SpringBoot.TodoService;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,10 +12,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
+@AllArgsConstructor
 public class TodoController {
 
     @Autowired
     private TodoService todoService;
+
 
     @GetMapping("/todos/{username}")
     public String getTodos(@PathVariable String username , @SessionAttribute("name") String name, Model model)
